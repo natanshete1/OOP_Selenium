@@ -31,7 +31,8 @@ class Dog(Animal):
 
 class Cat(Animal):
 
-    def __init__(self, breed, name):
+    def __init__(self, breed, name, color, food_type):
+        super().__init__(color, food_type)
         self.cat_breed = breed
         self.cat_name = name
 
